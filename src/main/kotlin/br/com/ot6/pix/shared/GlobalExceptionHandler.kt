@@ -25,7 +25,7 @@ class GlobalExceptionHandler
         val (httpStatus, message) = when (statusCode) {
             Status.NOT_FOUND.code -> Pair(HttpStatus.NOT_FOUND, statusDescription)
             Status.INVALID_ARGUMENT.code -> Pair(HttpStatus.BAD_REQUEST, "Dados inválidos")
-            Status.ALREADY_EXISTS.code -> Pair(HttpStatus.NOT_FOUND, statusDescription)
+            Status.ALREADY_EXISTS.code -> Pair(HttpStatus.UNPROCESSABLE_ENTITY, statusDescription)
             else -> {
                 LOGGER.error("Erro inesperado: '${exception.javaClass.name}' ao procesar requisição", exception)
                 Pair(HttpStatus.INTERNAL_SERVER_ERROR, "Requisição incompleta devido ao erro: $statusDescription - $statusCode")
