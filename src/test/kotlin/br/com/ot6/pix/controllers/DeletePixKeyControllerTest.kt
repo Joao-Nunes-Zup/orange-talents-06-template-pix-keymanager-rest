@@ -1,8 +1,7 @@
-package br.com.ot6.pix
+package br.com.ot6.pix.controllers
 
 import br.com.ot6.DeletePixKeyResponse
 import br.com.ot6.PixKeymanagerDeleteServiceGrpc
-import br.com.ot6.PixKeymanagerRegisterServiceGrpc
 import br.com.ot6.pix.shared.grpc.GrpcStubsFactory
 import io.micronaut.context.annotation.Factory
 import io.micronaut.context.annotation.Replaces

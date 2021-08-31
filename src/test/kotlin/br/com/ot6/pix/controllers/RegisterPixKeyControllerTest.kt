@@ -1,7 +1,10 @@
-package br.com.ot6.pix
+package br.com.ot6.pix.controllers
 
 import br.com.ot6.NewPixKeyResponse
 import br.com.ot6.PixKeymanagerRegisterServiceGrpc
+import br.com.ot6.pix.dtos.AccountTypeRequest
+import br.com.ot6.pix.dtos.PixKeyTypeRequest
+import br.com.ot6.pix.dtos.RegisterPixKeyRequest
 import br.com.ot6.pix.shared.grpc.GrpcStubsFactory
 import io.micronaut.context.annotation.Factory
 import io.micronaut.context.annotation.Replaces
@@ -12,7 +15,6 @@ import io.micronaut.http.client.annotation.Client
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest
 import jakarta.inject.Inject
 import jakarta.inject.Singleton
-import org.hamcrest.MatcherAssert.*
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import org.mockito.BDDMockito.given

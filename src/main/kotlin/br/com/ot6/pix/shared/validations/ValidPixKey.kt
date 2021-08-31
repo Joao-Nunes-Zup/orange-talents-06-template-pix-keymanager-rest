@@ -1,6 +1,6 @@
 package br.com.ot6.pix.shared.validations
 
-import br.com.ot6.pix.RegisterPixKeyRequest
+import br.com.ot6.pix.dtos.RegisterPixKeyRequest
 import io.micronaut.core.annotation.AnnotationValue
 import io.micronaut.validation.validator.constraints.ConstraintValidator
 import io.micronaut.validation.validator.constraints.ConstraintValidatorContext

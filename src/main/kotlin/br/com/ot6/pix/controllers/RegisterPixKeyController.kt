@@ -1,14 +1,13 @@
-package br.com.ot6.pix
+package br.com.ot6.pix.controllers
 
 import br.com.ot6.PixKeymanagerRegisterServiceGrpc
+import br.com.ot6.pix.dtos.RegisterPixKeyRequest
 import io.micronaut.http.HttpResponse
 import io.micronaut.http.annotation.Body
 import io.micronaut.http.annotation.Controller
 import io.micronaut.http.annotation.PathVariable
 import io.micronaut.http.annotation.Post
-import io.micronaut.http.uri.UriBuilder
 import io.micronaut.validation.Validated
-import java.net.URI
 import java.util.*
 import javax.validation.Valid
 

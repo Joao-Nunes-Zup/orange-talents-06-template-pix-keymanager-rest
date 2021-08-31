@@ -9,3 +9,11 @@ grpc:
   channels:
     keyManager:
       address: ${KEY_MANAGER_HOST}:${KEY_MANAGER_PORT}
+
+##
+# Necessary for correct serialization of a LocalDateTime
+# created from a protobuf Timestamp
+##
+jackson:
+  serialization:
+    writeDatesAsTimestamps: false

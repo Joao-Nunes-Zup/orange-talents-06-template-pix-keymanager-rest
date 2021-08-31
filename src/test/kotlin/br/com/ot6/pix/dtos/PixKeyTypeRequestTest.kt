@@ -1,4 +1,4 @@
-package br.com.ot6.pix
+package br.com.ot6.pix.dtos
 
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Nested

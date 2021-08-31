@@ -1,4 +1,4 @@
-package br.com.ot6.pix
+package br.com.ot6.pix.dtos
 
 import br.com.ot6.AccountType
 import br.com.ot6.KeyType
