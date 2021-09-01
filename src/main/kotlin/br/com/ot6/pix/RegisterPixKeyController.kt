@@ -1,4 +1,4 @@
-package br.com.ot6.pix.controllers
+package br.com.ot6.pix
 
 import br.com.ot6.PixKeymanagerRegisterServiceGrpc
 import br.com.ot6.pix.dtos.RegisterPixKeyRequest

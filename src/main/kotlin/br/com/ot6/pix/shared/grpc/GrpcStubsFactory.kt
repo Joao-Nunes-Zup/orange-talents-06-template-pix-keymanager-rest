@@ -4,6 +4,8 @@ import br.com.ot6.PixKeymanagerDeleteServiceGrpc
 import br.com.ot6.PixKeymanagerDeleteServiceGrpc.PixKeymanagerDeleteServiceBlockingStub
 import br.com.ot6.PixKeymanagerDetailServiceGrpc
 import br.com.ot6.PixKeymanagerDetailServiceGrpc.PixKeymanagerDetailServiceBlockingStub
+import br.com.ot6.PixKeymanagerListServiceGrpc
+import br.com.ot6.PixKeymanagerListServiceGrpc.PixKeymanagerListServiceBlockingStub
 import br.com.ot6.PixKeymanagerRegisterServiceGrpc
 import br.com.ot6.PixKeymanagerRegisterServiceGrpc.PixKeymanagerRegisterServiceBlockingStub
 import io.grpc.ManagedChannel
@@ -25,4 +27,8 @@ class GrpcStubsFactory(@GrpcChannel("keyManager") val channel: ManagedChannel) {
     @Singleton
     fun detail(): PixKeymanagerDetailServiceBlockingStub =
         PixKeymanagerDetailServiceGrpc.newBlockingStub(channel)
+
+    @Singleton
+    fun list(): PixKeymanagerListServiceBlockingStub =
+        PixKeymanagerListServiceGrpc.newBlockingStub(channel)
 }
