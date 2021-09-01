@@ -15,7 +15,7 @@ class DetailPixKeyController(
 ) {
 
     @Get("/pix/{pixId}")
-    fun delete(
+    fun detail(
         @PathVariable clientId: UUID, @PathVariable pixId: UUID
     ): HttpResponse<Any> {
         val grpcResponse = grpClient.detail(

@@ -41,7 +41,7 @@ internal class DeletePixKeyControllerTest {
 
         given(grpcClient.delete(Mockito.any())).willReturn(grpcResponse)
 
-        val request = HttpRequest.DELETE<Any>("api/v1/clientes/$clientId/pix/$pixId",)
+        val request = HttpRequest.DELETE<Any>("api/v1/clientes/$clientId/pix/$pixId")
         val response = httpClient.toBlocking().exchange(request, Any::class.java)
 
         assertEquals(HttpStatus.OK, response.status)
