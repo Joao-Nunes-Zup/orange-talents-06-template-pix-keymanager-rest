@@ -1,4 +1,4 @@
-package br.com.ot6.pix.controllers
+package br.com.ot6.pix
 
 import br.com.ot6.*
 import br.com.ot6.pix.shared.grpc.GrpcStubsFactory
@@ -30,9 +30,7 @@ internal class DetailPixKeyControllerTest {
     @field:Client("/")
     lateinit var httpClient: HttpClient
 
-    val EMAIL_KEY = "zoiodinho@damamae.com"
     val CPF_KEY = "71861834098"
-    val EMAIL_KEY_TYPE = KeyType.EMAIL
     val CPF_KEY_TYPE = KeyType.CPF
     val CONTA_CORRENTE = AccountType.CONTA_CORRENTE
     val INSTITUICAO = "ITAÚ UNIBANCO S.A."
